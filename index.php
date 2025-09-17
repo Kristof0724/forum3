@@ -16,13 +16,29 @@
     <title>Document</title>
 </head>
 <body>
+    <center>
+    <style>
+        input{
+            width: 300px;
+            height: 22px;
+        }
+
+        button{
+            
+        }
+    </style>
 
     <h1>Témák:</h1>
     <br>
     <form method="post" action="save.php">
-    <textarea name="temak" id="" cols="120" rows="40" value="<?php echo htmlspecialchars($data['temak']) ?>"></textarea>
-
-    <button type="submit">save</button>
+    <input name="temak" value="" ></input>
+    <br>
+    <br>
+    <button type="submit">Save</button>
+    <br>
+    <br>
+        <?php echo htmlspecialchars($data['temak']);?>
 </form>
+</center>
 </body>
 </html>
